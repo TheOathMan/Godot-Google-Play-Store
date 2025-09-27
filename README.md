@@ -1,5 +1,5 @@
 # Godot Android PlayStore Plugin
-This plugin is based on this [implementation](https://github.com/godot-sdk-integrations/godot-google-play-billing), I combines in-app purchases, subscriptions, and in-app store reviews in one plugin. The billing version used is 8.0.0.
+This plugin is based on this [implementation](https://github.com/godot-sdk-integrations/godot-google-play-billing), I combines in-app purchases, subscriptions, and in-app store reviews in one plugin. The upgrade to billing version 8.0.0 was made independently, so keep in mind that this version is not thoroughly tested. Because of that, I recommend using the original plugin for in-app purchases and subscriptions if you don't need the review feature. 
 
 ## How to setup
 * Make sure the addons folder plugin is at `res://addons`.
@@ -9,6 +9,20 @@ This plugin is based on this [implementation](https://github.com/godot-sdk-integ
 
 <!-- ## How to use
 Once the `GodotGooglePlayStore` node has been added to the scene. You can: -->
+
+## How to use
+I streamed line the process into 5 signals and two functions.
+
+# functions:
+1.- Function `purchases()`, call this function to get all the purchases and subscriptions.
+1.- Function `start_store_review()`, call this function to start the in-app review flow.
+
+# Signals:
+1. Signal `Purchase_Acknowledged_Successfully`, call `purchases()` function to get all the purchases and subscriptions.
+2. Signal `Purchase_Failed`, called when purchase failed.
+3. Signal `Purchase_Pending`, called when purchase is pending.
+4. Signal `ReviewError`, called when review flow failed.
+4. Signal `ReviewDone`, called when review flow is done.
 
 ## Building the plugin
 To build the plugin from source, you either download Android Studio from [here](https://developer.android.com/studio), then open the project in Android Studio and build it, or you can use the command line. To build from the command line, you need to have the [Android SDK](https://developer.android.com/studio) and JDK 17 installed.
