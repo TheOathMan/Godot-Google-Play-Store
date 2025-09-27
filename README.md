@@ -15,14 +15,14 @@ I streamed line the process into 5 signals and two functions.
 
 ### functions:
 1.- Function `purchases()`, call this function to get all the purchases and subscriptions.
-1.- Function `start_store_review()`, call this function to start the in-app review flow.
+2.- Function `start_store_review()`, call this function to start the in-app review flow.
 
 ### Signals:
 1. Signal `Purchase_Acknowledged_Successfully`, call `purchases()` function to get all the purchases and subscriptions.
 2. Signal `Purchase_Failed`, called when purchase failed.
 3. Signal `Purchase_Pending`, called when purchase is pending.
 4. Signal `ReviewError`, called when review flow failed.
-4. Signal `ReviewDone`, called when review flow is done.
+5. Signal `ReviewDone`, called when review flow is done.
 
 ## Building the plugin
 To build the plugin from source, you either download Android Studio from [here](https://developer.android.com/studio), then open the project in Android Studio and build it, or you can use the command line. To build from the command line, you need to have the [Android SDK](https://developer.android.com/studio) and JDK 17 installed.
