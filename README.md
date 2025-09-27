@@ -13,11 +13,11 @@ Once the `GodotGooglePlayStore` node has been added to the scene. You can: -->
 ## How to use
 I streamed line the process into 5 signals and two functions.
 
-# functions:
+### functions:
 1.- Function `purchases()`, call this function to get all the purchases and subscriptions.
 1.- Function `start_store_review()`, call this function to start the in-app review flow.
 
-# Signals:
+### Signals:
 1. Signal `Purchase_Acknowledged_Successfully`, call `purchases()` function to get all the purchases and subscriptions.
 2. Signal `Purchase_Failed`, called when purchase failed.
 3. Signal `Purchase_Pending`, called when purchase is pending.
