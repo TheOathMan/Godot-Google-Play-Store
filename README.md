@@ -1,5 +1,5 @@
 # Godot Android PlayStore Plugin
-This plugin combines in-app purchases, subscriptions, and in-app store reviews in one plugin. The billing version used is 8.0.0.
+This plugin is based on this [implementation](https://github.com/godot-sdk-integrations/godot-google-play-billing), I combines in-app purchases, subscriptions, and in-app store reviews in one plugin. The billing version used is 8.0.0.
 
 ## How to setup
 * Make sure the addons folder plugin is at `res://addons`.
